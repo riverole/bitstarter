@@ -5,7 +5,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
     var buff = fs.readFile("index.html");
-    var str = buffer.toString();
+    var str = buff.toString();
     response.send(str);
 });
 
