@@ -4,7 +4,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-    var buff = fs.readFile("/home/linodeadmin/bitstarter/index.html");
+    var buff = fs.readFileSync("index.html");
     var str = buff.toString();
     response.send(str);
 });
